@@ -1,4 +1,4 @@
 <h1>Pages#home</h1>
 <% if user_signed_in? %>
-  <p>Current user: <%= current_user.username || current_user.email %></p>
+  <p>Current user: <%= current_user.username ? current_user.username : current_user.email %></p>
 <% end %>
